@@ -480,6 +480,7 @@ lsp.setup()
 
 null_ls.setup({
   -- any other configuration
+  on_attach = lsp.build_options('null-ls', {}).on_attach,
   sources = {
     --- do whatever you need to do
   }
